@@ -8,3 +8,13 @@ version: 0.0.1.{build}
 artifacts:
   - path: bin
     name: bin
+deploy:
+  provider: GitHub
+  auth_token:
+    secure: 83ccc177da7672a8d492d9af485b9b46ebb29647
+  artifact: /.*\.dll/
+  draft: false
+  prerelease: false
+  on:
+    branch: master
+    APPVEYOR_REPO_TAG: true
