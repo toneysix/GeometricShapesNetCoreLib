@@ -1,9 +1,15 @@
+skip_branch_with_pr: true
+skip_tags: true
+skip_commits:
+  files:
+    - '**/*.md'
+
 init:
   - git config --global core.autocrlf input
 install:
   - git submodule update --init --recursive
 build_script:
-  - cmd: build.cmd
+  - ps: .\build.ps1
 version: 0.0.1.{build}
 artifacts:
   - path: bin

@@ -8,3 +8,4 @@
 /tests/ShapesUnitTests/bin
 /tests/ShapesUnitTests/obj
 /src/Shapes/bin/Debug/netstandard1.0
+/src/Shapes/bin/Release/netstandard1.0
